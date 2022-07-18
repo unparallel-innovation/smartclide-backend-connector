@@ -63,4 +63,4 @@ console.log(result);
 ```
 
 # License
-[Eclipse Public License 2.0](https://choosealicense.com/licenses/epl-2.0/)
+[MIT](https://choosealicense.com/licenses/mit/)
