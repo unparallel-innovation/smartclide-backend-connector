@@ -12,7 +12,7 @@ configuration object has the following properties:
 |--------------|-------------------------|-------------|
 | _operationId_ | ID of the operation according to the swagger description | All requests |
 | _parameters_ | Object containing the parameters required by the request (e.g., ```{ userId: "<userId>" }``` to send the userId to the /{userId} endpoint) | When demanded by the request |
-| _requestBody_ | Object containing the data to be sent to the API, in the request body (e.g., ```{ id: "<id>", email: "<email>", team_id: "<team_id>" }``` to send the details of the user to be created/updated) | POST, PUT and DELETE requests |
+| _requestBody_ | Object containing the data to be sent to the API, in the request body (e.g., ```{ id: "<id>", email: "<email>", team_id: "<team_id>" }``` to send the details of the user to be created/updated) | POST and PUT requests |
 | _token_ | Keycloak Bearer Authorization Token | All requests that require authentication |
 
 # How to use?
