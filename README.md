@@ -59,7 +59,6 @@ let result = await connector.call(configuration);
 
 // Log the response
 console.log(result);
-
 ```
 
 # License
