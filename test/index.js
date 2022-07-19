@@ -17,4 +17,6 @@ let result = await connector.call(
     }
 );
 
-console.log(result);
+let exists = await connector.exists("entity", "id", token);
+
+console.log(exists);

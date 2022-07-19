@@ -2,7 +2,7 @@
   "name": "@unparallel/smartclide-backend-connector",
   "author": "UNPARALLEL Innovation, lda.",
   "description": "A connector for accessing the SmartCLIDE database. A Keycloak Authorization Bearer Token is required for accessing the API outside the AWS cluster.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "main": "src/index.js",
   "type": "module",
   "homepage": "https://github.com/unparallel-innovation/smartclide-backend-connector",
