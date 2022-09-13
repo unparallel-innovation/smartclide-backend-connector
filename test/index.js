@@ -6,8 +6,8 @@ let token = "token";
 
 let result = await connector.call(
     {
-        operationId: "operationId",
-        parameters: { userId: "userId" },
+        operationID: "operationID",
+        parameters: { userId: "userID" },
         requestBody: {
             id: "id",
             email: "email@email.com",

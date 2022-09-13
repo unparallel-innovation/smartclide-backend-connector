@@ -54,7 +54,7 @@ let connector = await new SmartCLIDEBackendConnector("<swaggerURL>");
 // Create a configuration object with the required properties
 let configuration = {
     operationID: "<operationID>",
-    parameters: { userId: "<userId>" },
+    parameters: { userId: "<userID>" },
     requestBody: {
         id: "<id>",
         email: "<email>",

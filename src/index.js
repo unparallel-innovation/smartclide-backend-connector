@@ -44,7 +44,7 @@ export default class SmartCLIDEBackendConnector{
 
     async exists(entity, id, token){
         let input = {
-            operationId: this.operationIDs[entity],
+            operationID: this.operationIDs[entity],
             parameters: { userId: id },
             token: token
         };
