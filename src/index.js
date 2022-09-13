@@ -5,7 +5,7 @@ export default class SmartCLIDEBackendConnector{
         return (
             async () => {
                 this.swagger = await this.getSwagger(swaggerURL);
-                this.operationIds = {
+                this.operationIDs = {
                     "users": this.swagger.paths["/users/{userId}"].get.operationId,
                     "teams": this.swagger.paths["/teams/{teamId}"].get.operationId,
                     "ciManagers": this.swagger.paths["/ci_managers/{ciManagerId}"].get.operationId,
@@ -29,7 +29,7 @@ export default class SmartCLIDEBackendConnector{
     async call(input){
         let config = {
             spec: this.swagger,
-            operationId: input.operationId,
+            operationId: input.operationID,
             parameters: input.parameters,
             requestBody: input.requestBody,
             securities: {
@@ -44,7 +44,7 @@ export default class SmartCLIDEBackendConnector{
 
     async exists(entity, id, token){
         let input = {
-            operationId: this.operationIds[entity],
+            operationId: this.operationIDs[entity],
             parameters: { userId: id },
             token: token
         };
